@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="sw" data-theme="light"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="SadeBooks — Jifunze Zaidi. Soma Zaidi. Badilisha Maisha Yako.">
+<title>Account — SadeBooks</title><link rel="stylesheet" href="assets/css/style.css"></head><body>
+<div class="topbar"><div class="container">📚 Vitabu vya maarifa kwa TSh 1,000/= • Maudhui ya asili ya SadeBooks</div></div>
+<header class="nav"><div class="container nav-inner"><a class="logo" href="index.html">SADE<span>BOOKS</span></a>
+<nav class="nav-links"><a href="index.html">Home</a><a href="books.html">Vitabu</a><a href="wishlist.html">❤️ Wishlist</a><a href="my-books.html">📖 My Books</a><a href="profile.html">👤 Account</a></nav>
+<div class="nav-actions"><button class="theme-btn" data-theme-toggle aria-label="Badili theme">☾</button><a class="icon-btn" href="login.html" data-login>Ingia</a><a class="icon-btn" href="profile.html" data-logout style="display:none">Toka</a></div></div></header>
+<main>
+<section class="section"><div class="container"><div id="profile"></div></div></section>
+<script>
+if(!SB.user){profile.innerHTML=`<div class="form panel"><h1>Akaunti yako</h1><p class="muted">Ingia au jisajili ili kuona library yako.</p><a class="btn btn-primary" href="login.html">INGIA</a> <a class="btn btn-light" href="register.html">JISAJILI</a></div>`}else{let p=SB.purchases();profile.innerHTML=`<div class="section-head"><div><div class="eyebrow" style="color:var(--brand2)">ACCOUNT</div><h1>Karibu, ${SB.escape(SB.user.name)} 👋</h1><p class="muted">${SB.escape(SB.user.email)}</p></div><button class="btn btn-dark" onclick="SB.logout()">Toka</button></div><div class="stat-grid"><div class="stat">📚<div>Books purchased</div><div class="n">${p.filter(x=>x.status==="paid").length}</div></div><div class="stat">❤️<div>Wishlist</div><div class="n">${SB.wishlist().length}</div></div><div class="stat">🧾<div>Orders</div><div class="n">${p.length}</div></div></div><div class="panel" style="margin-top:22px"><h2>Historia ya manunuzi</h2><div class="table-wrap"><table class="table"><thead><tr><th>Order</th><th>Book</th><th>Status</th></tr></thead><tbody>${p.map(x=>`<tr><td>${x.orderId||"—"}</td><td>${x.bookId}</td><td>${x.status}</td></tr>`).join("")||'<tr><td colspan="3">Hakuna orders.</td></tr>'}</tbody></table></div></div>`}
+</script>
+</main><footer class="footer"><div class="container footer-grid">
+<div><div class="logo">SADE<span>BOOKS</span></div><p>Maarifa yako ni uwekezaji wako.</p><p class="muted">Jifunze Zaidi. Soma Zaidi. Badilisha Maisha Yako.</p></div>
+<div><strong>Gundua</strong><a href="books.html">Vitabu</a><a href="wishlist.html">Wishlist</a><a href="my-books.html">My Books</a></div>
+<div><strong>Msaada</strong><a href="pages/about.html">About</a><a href="pages/contact.html">Contact</a><a href="pages/help.html">Help</a></div>
+<div><strong>Sheria</strong><a href="pages/terms.html">Terms</a><a href="pages/privacy.html">Privacy</a><a href="pages/refund.html">Refund Policy</a></div>
+</div></footer>
+<nav class="bottom-nav"><a href="index.html"><span>🏠</span>Home</a><a href="books.html"><span>📚</span>Vitabu</a><a href="wishlist.html"><span>❤️</span>Wishlist</a><a href="my-books.html"><span>📖</span>My Books</a><a href="profile.html"><span>👤</span>Account</a></nav>
+<div class="toast"></div><script src="assets/js/app.js"></script></body></html>
