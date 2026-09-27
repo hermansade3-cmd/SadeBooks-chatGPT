@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="800" viewBox="0 0 600 800">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0f172a"/><stop offset="1" stop-color="#020617"/></linearGradient></defs>
+<rect width="600" height="800" rx="30" fill="url(#g)"/>
+<circle cx="500" cy="100" r="120" fill="#eab308" opacity=".16"/><circle cx="70" cy="720" r="160" fill="#eab308" opacity=".10"/>
+<rect x="42" y="52" width="516" height="8" rx="4" fill="#eab308"/>
+<text x="50" y="120" fill="#eab308" font-family="Arial,sans-serif" font-size="24" font-weight="700">SADEBOOKS</text>
+<text x="50" y="178" fill="#cbd5e1" font-family="Arial,sans-serif" font-size="19">Fedha na Ujasiriamali</text>
+<foreignObject x="50" y="225" width="500" height="300"><div xmlns="http://www.w3.org/1999/xhtml" style="font-family:Arial,sans-serif;color:white;font-size:44px;font-weight:800;line-height:1.08;">Misingi ya Akiba: Mwongozo wa Vitendo</div></foreignObject>
+<text x="50" y="620" fill="#94a3b8" font-family="Arial,sans-serif" font-size="18">ORIGINAL DEMO EDITION</text>
+<text x="50" y="668" fill="white" font-family="Arial,sans-serif" font-size="22">Jifunze • Soma • Tumia</text>
+<text x="50" y="730" fill="#cbd5e1" font-family="Arial,sans-serif" font-size="17">TSh 1,000/=</text>
+</svg>
